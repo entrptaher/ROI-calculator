@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .slidersWrapper {
+      margin-top: 80px;
+    }
+
+    .slider {
+      -webkit-appearance: none;
+      width: 30%;
+      height: 15px;
+      outline: none;
+      background: #C4C4C4;
+      margin-right: 50px;
+      border-radius: 20px;
+      float: left;
+    }
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      background: #8B37FF;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 30px;
+      height: 30px;
+      background: #8B37FF;
+      cursor: pointer;
+    }
+
+    .resultWrapper {
+      display: block;
+      margin: 0 auto;
+      clear: both;
+      width: 50%;
+      padding-top: 50px;
+    }
+
+    .resultWrapper p {
+      display: inline;
+      margin-right: 40px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="slidersWrapper">
+    <input type="range" min="1" max="100" value="50" class="slider" id="slider1">
+
+    <input type="range" min="1" max="100" value="30" class="slider" id="slider2">
+
+    <div class="resultWrapper">
+
+      <p>ROI:<span>1649</span>%</p>
+
+      <p>PAYBACK:<span>1</span>months</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
